@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+    color: white;
+    height: 100vh;
+    width: 100vw;
+    max-width: 1440px;
+    /* overflow: hidden; */
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: url("images/bg-desktop.svg") no-repeat, #674BB0;
+    display: flex;
+    flex-direction: column;
+}
+
+article {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 4rem;
+}
+
+.register-button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    text-decoration: none;
+    padding: 15px 64px;
+    border: 1px solid black;
+    border-radius: 28px;
+    background: white;
+    color: #674BB0;
+}
+
+.register-button:hover {
+    color: white;
+    background: #e283ec;
+    border: 1px solid #674BB0;
+}
+
+.fab {
+    color: white;
+    font-size: 1.8rem;
+    line-height: 3.6rem;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 72px;
+    padding-top: 50px;
+    padding-bottom: 0;
+}
+
+.huddle-logo {
+    max-width: 215px;
+    padding-bottom: 85px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 55% 40%;
+    column-gap: 50px;
+    margin-bottom: 20px;
+}
+
+main img {
+    max-width: 100%;
+}
+
+article h2 {
+    padding-top: 4.4rem;
+    padding-bottom: 1.9rem;
+}
+
+article p {
+    padding-bottom: 3.8rem;
+}
+
+.social-icons > div {
+    float: right;
+    height: 40px;
+    width: 40px;
+    margin: 0 8px;
+    border: 2px solid white;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.social-icons div:hover {
+    border: 2px solid #e283ec;
+}
+
+.fab:hover {
+    color: #e283ec;
+}
+
+@media screen and (max-width: 1200px) {
+    html {
+        overflow: auto;
+    }
+    main {
+        display: block;
+    }
+    .social-icons {
+        margin: 0 auto;
+    }
+    article {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        background: url("images/bg-mobile.svg") no-repeat, hsl(257, 40%, 49%);
+        padding: 36px;
+        padding-top: 36px;
+        padding-bottom: 0;
+    }
+    .huddle-logo {
+        max-width: 125px;
+        padding-bottom: 55px;
+    }
+    article h2 {
+        font-size: 2.4rem;
+    }
+    article p {
+        font-size: 1.6rem;
+    }
+}
